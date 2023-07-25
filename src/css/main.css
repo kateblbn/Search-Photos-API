@@ -38,3 +38,41 @@ img {
     height: 300px;
     object-fit: cover;
 }
+.galary__btns {
+    position: fixed;
+    bottom: 60px;
+    display: flex;
+}
+.galary__btns-cntr {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+.btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        box-shadow: 1px 1px 12px 2px  rgb(16, 9, 9);
+        transition: .5s all;
+    }
+}
+.galary__btn-cat {
+    background-color: rgb(226, 159, 43);
+}
+.galary__btn-animal  {
+    background-color: rgb(180, 226, 43);
+}
+.galary__btn-nature {
+    background-color: rgb(43, 226, 141);
+}
+.galary__btn-fashion {
+    background-color: rgb(226, 43, 131);
+}
