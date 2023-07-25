@@ -1,0 +1,40 @@
+.galary {
+    position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+.galary__flex-inpt {
+    display: flex;
+    justify-content: center;
+}
+.galary__input {
+    width: 170px;
+    height: 20px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    text-align: center;
+    &:active {
+        border: none;
+    }
+}
+.galary__images {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+}
+.flex {
+    display: flex;
+}
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
