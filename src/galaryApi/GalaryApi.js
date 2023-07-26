@@ -6,11 +6,6 @@ import Template from '../templates/Template';
 function GalaryApi() {
     const [data, setData] = useState([])
     const [srch, setCrch] = useState('music');
-    const [cat, setCat] = useState('cat')
-    const [animals, setanimals] = useState('animals')
-    const [nature, setnature] = useState('nature')
-    const [fashion, setFashion] = useState('fashion')
-
 
     const LINK = `https://api.pexels.com/v1/search?query=${srch}`;
     const LINK_KEY = 'TJofvw42wkBG6ncBAsmWz7yubj8JCFFrCb7JSTReeh5aSw8XynyvNCZ8';
@@ -37,18 +32,6 @@ function GalaryApi() {
         console.log(resultPhotos);
         setCrch(resultPhotos)
     }
-    function searchCat() {
-        setCrch(cat)
-    }
-    function searchAnimals() {
-        setCrch(animals)
-    }
-    function searchNature() {
-        setCrch(nature)
-    }
-    function searchFashion() {
-        setCrch(fashion)
-    }
 
     const getData = data?.map( (el, i) => {
         return <Template src={el.src.medium} alt={el.alt}/>;
@@ -58,10 +41,10 @@ function GalaryApi() {
     <div className='galary'>
         <div className='galary__btns-cntr'>
             <div className='galary__btns'>
-                <button  className='galary__btn-cat btn' onClick={searchCat}>Cats</button>
-                <button  className='galary__btn-animal btn' onClick={searchAnimals}>Animals</button>
-                <button  className='galary__btn-nature btn' onClick={searchNature}>Nature</button>
-                <button  className='galary__btn-fashion btn' onClick={searchFashion}>Fashion</button>
+                <button  className='galary__btn-cat btn' onClick={() => setCrch('cats')}>Cats</button>
+                <button  className='galary__btn-animal btn' onClick={() => setCrch('animals')}>Animals</button>
+                <button  className='galary__btn-nature btn' onClick={() => setCrch('nature')}>Nature</button>
+                <button  className='galary__btn-fashion btn' onClick={() => setCrch('fashion')}>Fashion</button>
             </div>
         </div>
         <div className='galary__flex-inpt'>

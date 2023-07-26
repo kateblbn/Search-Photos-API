@@ -3,19 +3,19 @@ import '../css/main.css'
 
 function Template({src, alt}) {
   const [click, setClick] = useState(false)
-  const active = (!click)? 'maximaze' : '';
-  const toScale = (!click)? 'noActive' : 'active'
   function getImg() {
-    setClick(active)
+    setClick(!click)
   }
+  const toScale = (!click)? 'noactive' : 'active'
+
   return (
     <div className='galary__images-flex'>
       <div className='scale'>
-      <img onClick={getImg} src={src} alt={alt}/>
+      <img  className={toScale} onClick={getImg} src={src} alt={alt}/>
       </div>
-      <div className={toScale}>
+      {/* <div className={toScale}>
       <img className={click} src={src} alt={alt}/>
-        </div>
+        </div> */}
 
     </div>
   )
