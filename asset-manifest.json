@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Search-Photos-API/static/css/main.e37a79b8.css",
+    "main.js": "/Search-Photos-API/static/js/main.3e4ac193.js",
+    "index.html": "/Search-Photos-API/index.html",
+    "main.e37a79b8.css.map": "/Search-Photos-API/static/css/main.e37a79b8.css.map",
+    "main.3e4ac193.js.map": "/Search-Photos-API/static/js/main.3e4ac193.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e37a79b8.css",
+    "static/js/main.3e4ac193.js"
+  ]
+}
